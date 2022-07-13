@@ -8,5 +8,5 @@ bot=Client(
   bot_token = brz sonra
   
 @bot.on_message(filter.command("start"))
-  async def start
-await bot.send_message("bruh")  
+  async def start(client, message):
+await bot.send_message(message.chat.id, "BU BİR TEST MESAJIDIR")  
